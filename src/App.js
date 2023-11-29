@@ -116,7 +116,7 @@ const App = () => {
             <label htmlFor="include-symbols">Include Symbols</label>
             <input checked={includeSymbols} onChange={(e) => setIncludeSymbols(e.target.checked)} type="checkbox" id="include-symbols" name="include-symbols" />
           </div>
-          <button onClick={handleGeneratePassword}>
+          <button onClick={handleGeneratePassword} className='generator_btn'>
             Generate Password
           </button>
           <ToastContainer 
