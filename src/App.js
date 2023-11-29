@@ -31,7 +31,7 @@ const App = () => {
   }
 
   const handleGeneratePassword = () => {
-    if(!includeLowerCase && !includeUpperCase && !includeNumbers && includeSymbols){
+    if(!includeLowerCase && !includeUpperCase && !includeNumbers && !includeSymbols){
       notify("To generate password you must select atleast one checkbox", true)
     }
     else{
