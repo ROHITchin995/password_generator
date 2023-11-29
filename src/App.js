@@ -1,9 +1,9 @@
-import './App.css';
 import React, {useState} from 'react';
+import './App.css';
 import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from './Character'
-import { COPY_Fail, COPY_SUCCESS } from './message';
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import { COPY_Fail, COPY_SUCCESS } from './message';
 
 const App = () => {
   const [password, setPassword ] = useState("")
@@ -72,6 +72,7 @@ const App = () => {
       const characterIndex = Math.round(Math.random() * characterListLength)
       password = password + characterList.charAt(characterIndex)
     }
+    return password
   }
 
   const handleCopyPassword = (e)=>{
