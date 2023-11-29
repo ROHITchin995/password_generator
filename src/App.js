@@ -1,7 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
+import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from './Character'
+import { COPY_Fail, COPY_SUCCESS } from './message';
 
-function App() {
+const App = () => {
+  const [pasword, setPassword ] = useState("")
+  const [passwordLength, setPasswordLength] = useState(26)
+  const [includeUpperCase, setIncludeUpperCase] = useState(false)
+  const [includeLowerCase, setIncludeLoweCase] = useState(false)
+  const [includeNumbers, setIncludeNumbers] = useState(false)
+  const [includeSymbols, setIncludeSymbols] = useState(false)
+
   return (
     <div className="App">
       <div className="container">
